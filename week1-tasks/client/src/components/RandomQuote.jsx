@@ -24,13 +24,13 @@ const RandomQuote = () => {
 
   return (
     <div className='bg-white shadow-md rounded-md p-6 m-4 text-center'>
-        <h2 className='text-xl fond-bold mb-2'>
+        <h2 className='text-xl fond-bold mb-2 text-yellow-600'>
             Quote of the Day
         </h2>
         {quoteData && (
             <>
-                <p className='text-lg italic text-gray-700'>"{quoteData.quote}"</p>
-                <h5 className='mt-2 text-right text-sm font-medium text-gray-500'>-{quoteData.author}</h5>
+                <p className='text-lg italic text-gray-800'>"{quoteData.quote}"</p>
+                <h5 className='text-right text-sm text-gray-600 mt-2'>-{quoteData.author}</h5>
             </>
         )}
     </div>
