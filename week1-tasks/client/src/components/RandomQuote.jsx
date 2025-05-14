@@ -7,7 +7,7 @@ const RandomQuote = () => {
 
     const fetchRandomQuote = async () => {
         try {
-            const {data} = await axios.get('http://localhost:5000/api/v1/quotes/random')
+            const {data} = await axios.get('https://techplement-155h.onrender.com/api/v1/quotes/random')
     
             if(data.success){
                 setQuoteData(data.data) ;

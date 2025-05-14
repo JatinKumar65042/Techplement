@@ -9,7 +9,7 @@ const SearchQuote = () => {
 
     const handleSearch = async () => {
         try {
-            const { data } = await axios.post('http://localhost:5000/api/v1/quotes/search', { author });
+            const { data } = await axios.post('https://techplement-155h.onrender.com/api/v1/quotes/search', { author });
         
             setQuotes(data.quotes);   
             setMessage(data.message); 
